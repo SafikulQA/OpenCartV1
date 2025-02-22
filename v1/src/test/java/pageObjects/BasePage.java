@@ -1,4 +1,7 @@
+package pageObjects;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 // This is parent of all the Page object classes
 public class BasePage {
@@ -7,9 +10,7 @@ public class BasePage {
 //Parent class Constructor
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        pageFactory.initElements(driver, this);
-
-
+        PageFactory.initElements(driver, this);
     }
     
 }

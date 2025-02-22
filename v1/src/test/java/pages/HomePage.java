@@ -1,7 +1,14 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import pageObjects.BasePage;
 
 public class HomePage extends BasePage {
 
+    WebDriver driver;
     //child class constarctor -1 Mandatory step for every chile page obejct class
     public HomePage(WebDriver driver) {
         super(driver);

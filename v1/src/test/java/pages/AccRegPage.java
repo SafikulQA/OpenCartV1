@@ -1,8 +1,15 @@
+package pages;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import pageObjects.BasePage;
+
 public class AccRegPage extends BasePage {
 
+    WebDriver driver;
     //child class constarctor -1 Mandatory step for every chile page obejct class
     public AccRegPage(WebDriver driver) {
         super(driver);
@@ -63,5 +70,10 @@ public class AccRegPage extends BasePage {
             return (e.getMessage());
         }
     }
+    public void zoomOut() {
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("document.body.style.zoom='80%'");
+            
 
+}
 }
