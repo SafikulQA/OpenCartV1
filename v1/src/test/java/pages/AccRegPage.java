@@ -64,6 +64,7 @@ public class AccRegPage extends BasePage {
     public String getRegistrationSuccessMessage() {
 
         try{
+        System.out.println("Your Account Has Been Created!");
         return txtSuccessMessage.getText();
         }
         catch(Exception e){
