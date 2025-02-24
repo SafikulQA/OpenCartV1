@@ -3,9 +3,10 @@ package testCases;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
+import baseClass.BaseTest;
+
 import org.testng.Assert;
 
-import base.BaseTest;
 import pages.AccRegPage;
 import pages.HomePage;
 
