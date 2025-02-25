@@ -56,14 +56,24 @@ public class TC001_AccRegTest extends BaseTest {
         // Print the success message in the console
         System.out.println("Registration Success Message: " + confmsg);
 
+        if (confmsg.equals("Your Account Has Been Created!"))
+         {
+            Assert.assertTrue(true);
+            logger.info("Test Case TC001_AccRegTest Passed");
+        } 
+        else 
+        {
+            logger.error("Test Case TC001_AccRegTest Failed");
+            logger.debug("Debug logs");
+            Assert.assertTrue(false); 
+        }
+
         // Assert the expected message
-        Assert.assertEquals(confmsg, "Your Account Has Been Created!");
+       // Assert.assertEquals(confmsg, "Your Account Has Been Created");
         } 
 
     catch (Exception e)
     {
-        logger.error("Test Case TC001_AccRegTest Failed");
-        logger.debug("Debug logs");
         Assert.fail();
     }
     logger.info("Test Case TC001_AccRegTest Completed");

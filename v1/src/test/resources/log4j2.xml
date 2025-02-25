@@ -26,7 +26,7 @@
     <Loggers>
 
         <!-- Mention "DEBUG" if the developer requests debug logs, then execute and send them the debug log. -->
-        <Root level="INFO"> 
+        <Root level="DEBUG"> 
             <!-- Available log levels: 
                  ALL > TRACE > DEBUG > INFO > WARN > ERROR > FATAL > OFF -->
 
