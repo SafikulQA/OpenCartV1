@@ -18,7 +18,7 @@ public class BaseTest {
         
         driver = new ChromeDriver();
 
-        driver.get("https://demo.opencart.com/");
+        driver.get("https://tutorialsninja.com/demo//");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         
@@ -32,15 +32,27 @@ public class BaseTest {
     }  
 
     //This method will generate random string
-    public String randomeString() {
+    public String randomeNameString() {
         String generatedString = RandomStringUtils.randomAlphabetic(5);
-        return (generatedString);
+        return (generatedString.toUpperCase());
     }
 
-    //This method will generate random alphanumeric string
-    public String randomeAlphaNumericString() {
+    public String randomeEmailString() {
         String generatedString = RandomStringUtils.randomAlphanumeric(7);
-        return (generatedString);
+        return (generatedString + "@gmail.com");
+    }
+
+    public String randomeNumberString() {
+        String generatedNumber = RandomStringUtils.randomNumeric(10);
+        return (generatedNumber);
+
+    }
+
+
+    //This method will generate random alphanumeric string
+    public String randomePasswordString() {
+        String generatedString = RandomStringUtils.randomAlphanumeric(7);
+        return (generatedString + "@");
     }
     
 }

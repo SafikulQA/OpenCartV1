@@ -25,13 +25,19 @@ public class AccRegPage extends BasePage {
     @FindBy(xpath="//input[@id='input-email']")
     private WebElement txtEmail;
 
+    @FindBy(xpath="//input[@id='input-telephone']")
+    private WebElement txtTelephone;
+
     @FindBy(xpath="//input[@id='input-password']")
-    private WebElement txtPassword;    
+    private WebElement txtPassword;  
+    
+    @FindBy(xpath="//input[@id='input-confirm']")
+    private WebElement txtConfirmPassword;
 
     @FindBy(xpath="//input[@name='agree']")
     private WebElement chkPrivacyPolicy;
 
-    @FindBy(xpath="//button[normalize-space()='Continue']")
+    @FindBy(xpath="//input[@value='Continue']")
     private WebElement btnContinue;
 
     @FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']")
@@ -48,9 +54,19 @@ public class AccRegPage extends BasePage {
     public void enterEmail(String email) {
         txtEmail.sendKeys(email);   
     }
+
+    public void enterTelephone(String telephone) {
+        txtTelephone.sendKeys(telephone);
+    }
+
     public void enterPassword(String password) {
         txtPassword.sendKeys(password);
     }
+
+    public void enterConfirmPassword(String Password) {
+        txtConfirmPassword.sendKeys(Password);
+    }
+
     public void clickOnPrivacyPolicy() {
         chkPrivacyPolicy.click();
     }

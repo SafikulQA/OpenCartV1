@@ -22,17 +22,19 @@ public class TC001_AccRegTest extends BaseTest {
 
         Thread.sleep(2000);
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("document.body.style.zoom='90%'");
+        js.executeScript("document.body.style.zoom='80%'");
 
         // Enter the registration details
         AccRegPage accReg = new AccRegPage(driver);
-        accReg.enterFirstName(randomeString().toUpperCase());
-        accReg.enterLastName(randomeString().toUpperCase());
-        accReg.enterEmail(randomeString() + ".qa@gamil.com");
+        accReg.enterFirstName(randomeNameString());
+        accReg.enterLastName(randomeNameString());
+        accReg.enterEmail(randomeEmailString());
+        accReg.enterTelephone(randomeNumberString());
 
         //Here we store the password in a variable so that we can use it later for set confirm password filed also
-        String password=randomeAlphaNumericString() + "@";
+        String password=randomePasswordString();
         accReg.enterPassword(password);
+        accReg.enterConfirmPassword(password);
 
         Thread.sleep(2000);
         accReg.clickOnPrivacyPolicy();
