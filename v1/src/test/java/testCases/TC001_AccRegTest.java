@@ -15,17 +15,25 @@ public class TC001_AccRegTest extends BaseTest {
 @Test
     public void test() throws InterruptedException {
 
-        // Click on My Account and then Register
+        logger.info("Test Case TC001_AccRegTest Started");
+
+        try
+        {
+        // Create object of HomePage
         HomePage home = new HomePage(driver);
         home.clickOnMyAccount();
+        logger.info("Clicked on My Account");
         home.clickOnRegister();
+        logger.info("Clicked on Register");
 
         Thread.sleep(2000);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.body.style.zoom='80%'");
 
-        // Enter the registration details
+        // crete object of AccRegPage
         AccRegPage accReg = new AccRegPage(driver);
+
+        logger.info("Entering Registration Details");
         accReg.enterFirstName(randomeNameString());
         accReg.enterLastName(randomeNameString());
         accReg.enterEmail(randomeEmailString());
@@ -42,14 +50,23 @@ public class TC001_AccRegTest extends BaseTest {
         accReg.clickOnContinue();
         Thread.sleep(2000);
 
-        // Get success message
+        logger.info("Validating expected success message");
         String confmsg=accReg.getRegistrationSuccessMessage();
 
         // Print the success message in the console
-    System.out.println("Registration Success Message: " + confmsg);
+        System.out.println("Registration Success Message: " + confmsg);
 
         // Assert the expected message
         Assert.assertEquals(confmsg, "Your Account Has Been Created!");
-    }   
+        } 
+
+    catch (Exception e)
+    {
+        logger.error("Test Case TC001_AccRegTest Failed");
+        logger.debug("Debug logs");
+        Assert.fail();
+    }
+    logger.info("Test Case TC001_AccRegTest Completed");
     
+}
 }
