@@ -102,3 +102,24 @@
 2025-02-26 22:40:38 INFO  TC001_AccRegTest:53 - Validating expected success message
 2025-02-26 22:40:38 INFO  TC001_AccRegTest:62 - Test Case TC001_AccRegTest Passed
 2025-02-26 22:40:38 INFO  TC001_AccRegTest:79 - Test Case TC001_AccRegTest Completed
+2025-02-26 22:45:00 INFO  TC001_AccRegTest:18 - Test Case TC001_AccRegTest Started
+2025-02-26 22:45:00 INFO  TC001_AccRegTest:25 - Clicked on My Account
+2025-02-26 22:45:01 INFO  TC001_AccRegTest:27 - Clicked on Register
+2025-02-26 22:45:03 INFO  TC001_AccRegTest:36 - Entering Registration Details
+2025-02-26 22:45:10 INFO  TC001_AccRegTest:53 - Validating expected success message
+2025-02-26 22:45:10 INFO  TC001_AccRegTest:62 - Test Case TC001_AccRegTest Passed
+2025-02-26 22:45:10 INFO  TC001_AccRegTest:79 - Test Case TC001_AccRegTest Completed
+2025-02-26 23:14:22 INFO  TC001_AccRegTest:18 - Test Case TC001_AccRegTest Started
+2025-02-26 23:14:22 INFO  TC001_AccRegTest:25 - Clicked on My Account
+2025-02-26 23:14:26 INFO  TC001_AccRegTest:27 - Clicked on Register
+2025-02-26 23:14:28 INFO  TC001_AccRegTest:36 - Entering Registration Details
+2025-02-26 23:14:35 INFO  TC001_AccRegTest:53 - Validating expected success message
+2025-02-26 23:14:35 INFO  TC001_AccRegTest:62 - Test Case TC001_AccRegTest Passed
+2025-02-26 23:14:35 INFO  TC001_AccRegTest:79 - Test Case TC001_AccRegTest Completed
+2025-02-26 23:22:50 INFO  TC001_AccRegTest:18 - Test Case TC001_AccRegTest Started
+2025-02-26 23:22:50 INFO  TC001_AccRegTest:25 - Clicked on My Account
+2025-02-26 23:22:52 INFO  TC001_AccRegTest:27 - Clicked on Register
+2025-02-26 23:22:54 INFO  TC001_AccRegTest:36 - Entering Registration Details
+2025-02-26 23:23:02 INFO  TC001_AccRegTest:53 - Validating expected success message
+2025-02-26 23:23:02 INFO  TC001_AccRegTest:62 - Test Case TC001_AccRegTest Passed
+2025-02-26 23:23:02 INFO  TC001_AccRegTest:79 - Test Case TC001_AccRegTest Completed
