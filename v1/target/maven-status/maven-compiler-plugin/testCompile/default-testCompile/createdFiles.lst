@@ -1,0 +1,9 @@
+YourStore.class
+pages/AccRegPage.class
+baseClass/BaseTest.class
+pages/HomePage.class
+pageObjects/BasePage.class
+testCases/TC001_AccRegTest.class
+LoginPage.class
+TC002_LoginTest.class
+MyAccPage.class

@@ -22,14 +22,14 @@ public class BaseTest {
     @BeforeMethod
     @Parameters({"os", "browser"})
     
-    public void setup(String os, String br)        //This method will be executed before every test method
+    public void setup(String os, String browser)        //This method will be executed before every test method
      {
     
         logger=LogManager.getLogger(this.getClass());       //log4j2
 
         //driver = new ChromeDriver(); //This is the old way of creating driver object
         // below code is to create driver object based on the browser parameter passed from testng.xml file
-        switch (br.toLowerCase())
+        switch (browser.toLowerCase())
          {
             case "chrome":  driver = new ChromeDriver(); break;
             case "edge":    driver = new EdgeDriver();  break;
