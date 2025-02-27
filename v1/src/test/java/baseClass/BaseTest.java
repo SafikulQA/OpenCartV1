@@ -10,7 +10,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-//Below are the imports for Log4j logging should be added to the BaseTest class file Carefully
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -25,7 +24,7 @@ public class BaseTest {
     public void setup(String os, String browser)        //This method will be executed before every test method
      {
     
-        logger=LogManager.getLogger(this.getClass());       //log4j2
+        logger = LogManager.getLogger(this.getClass().getName());       //log4j2
 
         //driver = new ChromeDriver(); //This is the old way of creating driver object
         // below code is to create driver object based on the browser parameter passed from testng.xml file
